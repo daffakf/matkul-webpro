@@ -1,0 +1,199 @@
+/* Font */
+/* @font-face {
+    font-family: 'BebasNeue';
+    src: url(../fonts/BebasNeue-Regular.woff);
+} */
+
+/* Style Utama */
+body {
+    font: 18px/16px 'BebasNeue', arial;
+    background-image: linear-gradient(rgba(46, 46, 49, 0.5), rgba(46, 46, 49, 0.5)), url(../img/restaurant7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/* header */
+.header {
+    width: 100%;
+    height: 120px;
+}
+
+.header-logo,
+.header-list {
+    padding: 15px;
+}
+
+.header-logo img {
+    width: 180px;
+    float: left;
+    margin-left: 50px;
+}
+
+.header ul {
+    float: right;
+    margin-right: 50px;
+}
+
+.header-list li {
+    float: left;
+    list-style: none;
+    padding: 0 40px;
+}
+
+.header-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* .header-list li:after {
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+} */
+
+/* main */
+.top-wrapper {
+    width: 100%;
+    height: 773px;
+    margin-top: 60px;
+}
+
+.content {
+    padding: 20px 0;
+    margin-left: 220px;
+    width: 700px;
+    height: 400px;
+    float: left;
+}
+
+.content h1 {
+    line-height: 120px;
+    font-size: 120px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #ffffff;
+}
+
+.content p {
+    font-size: 20px;
+    margin-top: -60px;
+    margin-left: 8px;
+}
+
+.top-wrapper img {
+    width: 900px;
+    margin-top: -30px;
+    transition: .5s;
+    position: absolute;
+}
+
+.top-wrapper img:hover {
+    transform: scale(1.1);
+}
+
+.links {
+    margin-top: 50px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+}
+
+.links {
+    margin-left: 5px;
+    opacity: 0;
+}
+
+.btn {
+    border: 1px solid #fff;
+    padding: 10px 35px;
+    border-radius: 30px;
+    margin-right: 15px;
+}
+
+.btn-1,
+.btn-2 {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, .5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn-1:hover,
+.btn-2:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388;
+}
+
+/* animation */
+.slide-right {
+    animation: slideright 1s linear forwards;
+}
+
+@keyframes slideright {
+    0% {
+        transform: translate(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: 0px;
+        opacity: 1;
+    }
+}
+
+.slide-left {
+    animation: slideleft 1s linear forwards;
+}
+
+@keyframes slideleft {
+    0% {
+        transform: translate(0px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(-50px);
+        opacity: 1;
+    }
+}
+
+.links {
+    animation: fade .5s 1s linear forwards;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* .breathing {
+    animation: breathing 2s 1s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes breathing {
+    0% {
+        transform: scale(.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+} */
